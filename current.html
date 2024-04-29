@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Status</title>
+</head>
+<body>
+    <header>
+        <h2>Tytuł</h2>
+        <div id="in_s">
+            <label for="name">Szukaj: </label>
+            <input type="text" name="search" id="search" placeholder="Wpisz nazwę...">
+        </div>
+    </header>
+    
+    <div id="top">
+        <nav>
+            <a href="index2.html">Serwery tymczasowe - specyfikacja</a>
+            <a href="transfers.html">Serwery wirtualne</a>
+            <a href="#">Historia</a>
+        </nav>
+    </div>
+
+    <div id="left">
+        <ol>
+            <li><a href="#">Szczegóły - tymczasowe</a>
+              <ul>
+                <li><a href="st1.html">Serwer 1</a></li>
+                <li><a href="st2.html">Serwer 2</a></li>
+                <li><a href="st3.html">Serwer 3</a></li>
+              </ul>
+            </li>
+      
+            <li><a href="#">Szczegóły - wirtualne</a>
+              <ul>
+                <li><a href="sw1.html">Serwer 1</a></li>
+                <li><a href="sw2.html">Serwer 2</a></li>
+                <li><a href="sw3.html">Serwer 3</a></li>
+              </ul>
+            </li>
+        </ol>
+        <br><br><br>
+        
+    </div>
+
+    <div id="bottom">
+        <br><h3>Aktualny status:</h3><br>
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>Opis</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Serwer chwilowo przeniesiony na tymczasowy - w planach jest powrót na serwer docelowy</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Serwer powrócił już na docelowy, jednak wcześniej był tymczasowy</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Serwer jest wstrzymywany z powodu awarii lub przeprowadzania testów</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Serwer działa, nigdy nie był przenoszony</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

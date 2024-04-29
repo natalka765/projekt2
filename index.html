@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Serwery tymczasowe</title>
+    <script src="scriptT.js" defer></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h2>Tymczasowe</h2>
+        
+    </header>
+    
+    <div id="top">
+        <nav>
+            <a href="index.html">Spis serwerów tymczasowych</a>
+            <a href="transfers.html">Szczegóły migracji</a>
+            <a href="current.html">Status - opis</a>
+        </nav>
+        <div id="in_s">
+            <label for="name">Szukaj: </label>
+            <input type="text" name="search" id="search" placeholder="Wpisz nazwę...">
+        </div>
+    </div>
+
+    <div id="left">
+      
+        <ol>
+            <li><a href="#">Szczegóły - tymczasowe</a>
+              <ul>
+                <li><a href="st1.html">Serwer 1</a></li>
+                <li><a href="st2.html">Serwer 2</a></li>
+                <li><a href="st3.html">Serwer 3</a></li>
+              </ul>
+            </li>
+      
+            <li><a href="#">Szczegóły - wirtualne</a>
+              <ul>
+                <li><a href="sw1.html">Serwer 1</a></li>
+                <li><a href="sw2.html">Serwer 2</a></li>
+                <li><a href="sw3.html">Serwer 3</a></li>
+              </ul>
+            </li>
+        </ol>
+   
+        
+        <br><br><br>
+        
+    </div>
+
+    <div id="bottom">
+        <br><h3>Serwery tymczasowe:</h3><br>
+        <table id="server-table">
+            <tr>
+                <th>Nazwa serwera</th>
+                <th>Opis</th>
+                <th>Serwer wirtualny</th>
+                <th>Dostępna przestrzeń</th>
+            </tr>
+            <tr data-id="1">
+                <td>Serwer 1 - tymczasowy</td>
+                <td>Krótki opis tego serwera 1</td>
+                <td>Serwer 1 - wirtualny</td> <!--nazwa tego co tam się znajduje-->
+                <td>100GB (jaką przestrzenią można dysponować)</td>
+            </tr>
+            <tr data-id="2">
+                <td>Serwer 2 - tymczasowy</td>
+                <td>Krótki Opis tego serwera 2</td>
+                <td>
+                    Serwer 1 - wirtualny <br>
+                    Serwer 3 - wirtualny
+                </td>
+                <td>200GB (jaką przestrzenią można dysponować)</td>
+            </tr>
+            <tr data-id="3">
+                <td>Serwer 3 - tymczasowy</td>
+                <td>Krótki Opis tego serwera 3</td>
+                <td>Brak serwera wirtualnego</td>
+                <td>300GB (jaką przestrzenią można dysponować)</td>
+            </tr>
+            
+        </table>
+    </div>
+</body>
+</html>

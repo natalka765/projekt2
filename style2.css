@@ -1,0 +1,166 @@
+*{
+    margin: auto;
+    font-family: calibri;
+    
+}
+/* body{
+    height: 100vh;
+} */
+header{
+    color: white;
+    background-color: black;
+    height: 6vh;
+    padding: 20px;
+}
+nav{
+    text-align: center;
+    background-color: lightgray;
+    padding: 20px;
+    /* display: flex; */
+}
+nav a{
+    text-decoration: none;
+    color: black;
+    padding: 20px;
+}
+nav a:hover{
+    background-color: gray;
+}
+table,tr,td,th{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+table{
+    width: 70%;
+}
+td,th{
+    padding: 7px;
+}
+tr:nth-child(even){
+    background-color: rgb(73, 67, 67);
+    color: white;
+}
+#center{
+    float: left;
+    padding: 20px;
+    width: 77vw;
+}
+#bottom{
+    float: left;
+    width: 77vw;
+}
+#left{
+    float: left;
+    /* padding: 10px; */
+    background-color: lightgray;
+    width: 20vw;
+    height: 100vh;
+    overflow-x: auto;
+}
+#in_s{
+   float: right;
+   
+}
+.progress-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.progress-label {
+    margin-right: 0px; 
+}
+
+.progress-container {
+    width: 300px;
+    height: 20px;
+    border: 1px solid #ccc;
+    overflow: hidden;
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.progress-container button{
+    background-color: white;
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: #4CAF50;
+    transition: width 0.3s ease-in-out;
+    margin: 0;
+    text-align: center;
+    
+}
+
+#center ul{
+    display: inline;
+    float: left;
+}
+
+h3 button{
+    margin-left: 45vw;
+    background-color: lightgray;
+    border-radius: 10px;
+    padding: 10px;
+    
+}
+
+
+#table-container table {
+    width: 75%;
+    border-collapse: collapse;
+}
+.pagination-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+.pagination {
+    margin-top: 20px;
+}
+.pagination button {
+    margin: 0 5px;
+}
+
+
+
+
+
+
+
+ul,ol{
+    list-style-type: none;
+}
+ol a{
+    text-decoration: none;
+    color: black;
+}
+ol a:hover{
+    
+    background-color: #DDD;
+}
+ol > li:hover > ul {
+    display:block;
+}
+ol > li > ul {
+    display:none;
+    list-style-type:none; 
+}
+ol > li > ul > li:hover {
+    background-color:#DDD;
+  }
+ol li a:hover{
+    background-color: #DDD;
+}
+ol{
+    font-size:18px;
+    height:2em;
+    line-height:2em;
+    text-align:center;
+    padding: 0;
+   
+}
+b{
+    color: green;
+}
