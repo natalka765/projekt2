@@ -5,17 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style2.css">
     <title>Serwery wirtualne</title>
-    <script src="scriptW.js" defer></script>
+    <!-- <script src="scriptW.js" defer></script> -->
     <script src="script.js" defer></script>
     <script src="lp.js" defer></script>
 </head>
 <body>
     <header>
         <h2>Wirtualne</h2>
-        <div id="in_s">
-            <label for="name">Szukaj: </label>
-            <input type="text" name="search" id="search" placeholder="Wpisz nazwę...">
-        </div>
+        
     </header>
     
     <div id="top">
@@ -28,13 +25,17 @@
 
     <div id="left">
         <ol>
-            <li><a href="#">Szczegóły - tymczasowe</a>
-              <ul>
-                <li><a href="st1.html">Serwer 1</a></li>
-                <li><a href="st2.html">Serwer 2</a></li>
-                <li><a href="st3.html">Serwer 3</a></li>
-              </ul>
-            </li>
+            <li><a href="#">Tymczasowe</a>
+                <ul>
+                  <li><a href="index2.html">Serwer 1</a></li>
+                  <li><a href="st2.html">Serwer 2</a></li>
+                  <li><a href="st3.html">Serwer 3</a></li>
+                  <li><a href="#">Serwer 4</a></li>
+                  <li><a href="#">Serwer 5</a></li>
+                  <li><a href="#">Serwer 6</a></li>
+                </ul>
+              </li>
+        
       
             <li><a href="#">Szczegóły - wirtualne</a>
               <ul>
@@ -44,81 +45,210 @@
               </ul>
             </li>
         </ol>
-    </div>
+    </div> 
 
     <div id="center">
+        <div id="in_s">
+            <label for="name">Szukaj: </label>
+            <input type="text" name="search" id="search" placeholder="Wpisz nazwę...">
+        </div>
         <br><h3>Serwery wirtualne: <button type="button">Archiwalne</button></h3>
     </div>
-<div id="bottom">
-    <div id="table-container">
-        <table id="server-table">
-            <thead>
-                <tr>
-                    <th>LP</th>
-                    <th>Nazwa serwera (w)</th>
-                    <th>Gdzie jest (t)</th>
-                    <th>Rozpoczęcie</th>
-                    <th>Nazwa (t)</th>
-                    <th>Zakończenie</th>
-                    <th>Gdzie poszedł (t)</th>
-                    <th>Aktualny status</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr data-id="1">
-                    <td></td>
-                    <td>Serwer1-wirtualny</td>
-                    <td>serwer1-tymczasowy</td>
-                    <td>01.01.1990r</td>
-                    <td>serwer2-tymczasowy</td>
-                    <td>01.02.1999r</td>
-                    <td>serwer1-tymczasowy</td>
-                    <td>on_temporary*</td>
-                </tr>
-                <tr data-id="2"> 
-                    <td></td>
-                    <td>Serwer 2 - wirtualny</td>
-                    <td>serwer 2 - tymczasowy</td>
-                    <td>01.01.1990r</td>
-                    <td>serwer 3 - tymczasowy</td>
-                    <td>01.02.1999r</td>
-                    <td>serwer 1 - tymczasowy</td>
-                    <td>migrated_back*</td>
-                </tr>
-                <tr data-id="3">
-                    <td></td>
-                    <td>Serwer 3 - wirtualny</td>
-                    <td>serwer 3 - tymczasowy</td>
-                    <td>01.01.1990r</td>
-                    <td>serwer 2 - tymczasowy</td>
-                    <td>01.02.1999r</td>
-                    <td>serwer 1 - tymczasowy</td>
-                    <td>maintenance*</td>
-                </tr>
-            </tbody>
-        </table>
-        <br><br>
+    <div id="bottom">
+        <div id="table-container">
+            <table id="server-table">
+                <thead>
+                    <tr>
+                        <th>LP</th>
+                        <th>Nazwa serwera (w)</th>
+                        <th>Gdzie jest (t)</th>
+                        <th>Rozpoczęcie</th>
+                        <th>Nazwa (t)</th>
+                        <th>Zakończenie</th>
+                        <th>Gdzie poszedł (t)</th>
+                        <th>Aktualny status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr data-id="1">
+                        <td></td>
+                        <td>Serwer1-wirtualny</td>
+                        <td>serwer1-tymczasowy</td>
+                        <td>01.01.1990r</td>
+                        <td>serwer2-tymczasowy</td>
+                        <td>01.02.1999r</td>
+                        <td>serwer1-tymczasowy</td>
+                        <td>on_temporary*</td>
+                    </tr>
+                    <tr data-id="2"> 
+                        <td></td>
+                        <td>Serwer 2 - wirtualny</td>
+                        <td>serwer 2 - tymczasowy</td>
+                        <td>01.01.1990r</td>
+                        <td>serwer 3 - tymczasowy</td>
+                        <td>01.02.1999r</td>
+                        <td>serwer 1 - tymczasowy</td>
+                        <td>migrated_back*</td>
+                    </tr>
+                    <tr data-id="3">
+                        <td></td>
+                        <td>Serwer 3 - wirtualny</td>
+                        <td>serwer 3 - tymczasowy</td>
+                        <td>01.01.1990r</td>
+                        <td>serwer 2 - tymczasowy</td>
+                        <td>01.02.1999r</td>
+                        <td>serwer 1 - tymczasowy</td>
+                        <td>maintenance*</td>
+                    </tr>
+                    <tr data-id="1">
+                        <td></td>
+                        <td>Serwer1-wirtualny</td>
+                        <td>serwer1-tymczasowy</td>
+                        <td>01.01.1990r</td>
+                        <td>serwer2-tymczasowy</td>
+                        <td>01.02.1999r</td>
+                        <td>serwer1-tymczasowy</td>
+                        <td>on_temporary*</td>
+                    </tr>
+                    <tr data-id="2"> 
+                        <td></td>
+                        <td>Serwer 2 - wirtualny</td>
+                        <td>serwer 2 - tymczasowy</td>
+                        <td>01.01.1990r</td>
+                        <td>serwer 3 - tymczasowy</td>
+                        <td>01.02.1999r</td>
+                        <td>serwer 1 - tymczasowy</td>
+                        <td>migrated_back*</td>
+                    </tr>
+                    <tr data-id="3">
+                        <td></td>
+                        <td>Serwer 3 - wirtualny</td>
+                        <td>serwer 3 - tymczasowy</td>
+                        <td>01.01.1990r</td>
+                        <td>serwer 2 - tymczasowy</td>
+                        <td>01.02.1999r</td>
+                        <td>serwer 1 - tymczasowy</td>
+                        <td>maintenance*</td>
+                    </tr>
+                    <tr data-id="1">
+                        <td></td>
+                        <td>Serwer1-wirtualny</td>
+                        <td>serwer1-tymczasowy</td>
+                        <td>01.01.1990r</td>
+                        <td>serwer2-tymczasowy</td>
+                        <td>01.02.1999r</td>
+                        <td>serwer1-tymczasowy</td>
+                        <td>on_temporary*</td>
+                    </tr>
+                    <tr data-id="2"> 
+                        <td></td>
+                        <td>Serwer 2 - wirtualny</td>
+                        <td>serwer 2 - tymczasowy</td>
+                        <td>01.01.1990r</td>
+                        <td>serwer 3 - tymczasowy</td>
+                        <td>01.02.1999r</td>
+                        <td>serwer 1 - tymczasowy</td>
+                        <td>migrated_back*</td>
+                    </tr>
+                    <tr data-id="3">
+                        <td></td>
+                        <td>Serwer 3 - wirtualny</td>
+                        <td>serwer 3 - tymczasowy</td>
+                        <td>01.01.1990r</td>
+                        <td>serwer 2 - tymczasowy</td>
+                        <td>01.02.1999r</td>
+                        <td>serwer 1 - tymczasowy</td>
+                        <td>maintenance*</td>
+                    </tr>
+                    <tr data-id="1">
+                        <td></td>
+                        <td>Serwer1-wirtualny</td>
+                        <td>serwer1-tymczasowy</td>
+                        <td>01.01.1990r</td>
+                        <td>serwer2-tymczasowy</td>
+                        <td>01.02.1999r</td>
+                        <td>serwer1-tymczasowy</td>
+                        <td>on_temporary*</td>
+                    </tr>
+                    <tr data-id="2"> 
+                        <td></td>
+                        <td>Serwer 2 - wirtualny</td>
+                        <td>serwer 2 - tymczasowy</td>
+                        <td>01.01.1990r</td>
+                        <td>serwer 3 - tymczasowy</td>
+                        <td>01.02.1999r</td>
+                        <td>serwer 1 - tymczasowy</td>
+                        <td>migrated_back*</td>
+                    </tr>
+                    <tr data-id="3">
+                        <td></td>
+                        <td>Serwer 3 - wirtualny</td>
+                        <td>serwer 3 - tymczasowy</td>
+                        <td>01.01.1990r</td>
+                        <td>serwer 2 - tymczasowy</td>
+                        <td>01.02.1999r</td>
+                        <td>serwer 1 - tymczasowy</td>
+                        <td>maintenance*</td>
+                    </tr>
+                    <tr data-id="1">
+                        <td></td>
+                        <td>Serwer1-wirtualny</td>
+                        <td>serwer1-tymczasowy</td>
+                        <td>01.01.1990r</td>
+                        <td>serwer2-tymczasowy</td>
+                        <td>01.02.1999r</td>
+                        <td>serwer1-tymczasowy</td>
+                        <td>on_temporary*</td>
+                    </tr>
+                    <tr data-id="2"> 
+                        <td></td>
+                        <td>Serwer 2 - wirtualny</td>
+                        <td>serwer 2 - tymczasowy</td>
+                        <td>01.01.1990r</td>
+                        <td>serwer 3 - tymczasowy</td>
+                        <td>01.02.1999r</td>
+                        <td>serwer 1 - tymczasowy</td>
+                        <td>migrated_back*</td>
+                    </tr>
+                    <tr data-id="3">
+                        <td></td>
+                        <td>Serwer 3 - wirtualny</td>
+                        <td>serwer 3 - tymczasowy</td>
+                        <td>01.01.1990r</td>
+                        <td>serwer 2 - tymczasowy</td>
+                        <td>01.02.1999r</td>
+                        <td>serwer 1 - tymczasowy</td>
+                        <td>maintenance*</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br><br>
 
-        <div class="pagination-container">
-            <div class="pagination">
-                <button onclick="previousPage()">&lt;</button>
-                <span id="page-info">strona 1</span>
-                <button onclick="nextPage()">&gt;</button>
+            <div class="pagination-container">
+                <div class="pagination">
+                    <button onclick="previousPage()">&lt;</button>
+                    <span id="page-info">strona 1</span>
+                    <button onclick="nextPage()">&gt;</button>
+
+
+                    <label for="RecordsOnPage">Ilość rekorów:</label>
+                    <select id="RecordsOnPage" onchange="RecordsOnPage()">
+                        <option value="5">5</option>
+                        <option value="10">10</option>
+                        <option value="20">20</option>
+                    </select>
+                </div>
             </div>
-    
-            <div>
-                <label for="records-per-page">Ilość rekorów:</label>
-                <select id="records-per-page" onchange="changeRecordsPerPage()">
-                    <option value="5">5</option>
-                    <option value="10">10</option>
-                    <option value="20">20</option>
-                </select>
-            </div>
+            <br>
+<hr>
+            <br>
+            <i>
+            <p>on_temporary - Serwer chwilowo przeniesiony na tymczasowy - w planach jest powrót na serwer docelowy</p>
+            <p>migrated_back - Serwer powrócił już na docelowy, jednak wcześniej był tymczasowy</p>
+            <p>maintenance - Serwer jest wstrzymywany z powodu awarii lub przeprowadzania testów</p>
+        </i>
         </div>
-
-
     </div>
-</div>
    
 </body>
 </html>

@@ -44,18 +44,24 @@ tr:nth-child(even){
     float: left;
     padding: 20px;
     width: 77vw;
+    /* background-color: blue; */
 }
 #bottom{
     float: left;
     width: 77vw;
+    padding: 20px;
+    /* background-color: red;
+    clear: both; */
+    /* height: 100vh; */
 }
 #left{
     float: left;
     /* padding: 10px; */
     background-color: lightgray;
     width: 20vw;
-    height: 100vh;
-    overflow-x: auto;
+    min-height: 100vh;
+    flex-grow: 1;
+    /*overflow-x: auto; */
 }
 #in_s{
    float: right;
@@ -98,7 +104,7 @@ tr:nth-child(even){
 }
 
 h3 button{
-    margin-left: 45vw;
+    margin-left: 15vw;
     background-color: lightgray;
     border-radius: 10px;
     padding: 10px;
@@ -111,19 +117,23 @@ h3 button{
     border-collapse: collapse;
 }
 .pagination-container {
-    display: flex;
+    display:flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 20px;
 }
 .pagination {
-    margin-top: 20px;
+    display: flex;
+    align-items: center;
 }
 .pagination button {
     margin: 0 5px;
 }
 
+th{
+    background-color: whitesmoke;
+    cursor:default;
 
+}
 
 
 

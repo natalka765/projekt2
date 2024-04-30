@@ -3,35 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Serwer 3</title>
-    <script src="scriptT.js" defer></script>
+    <link rel="stylesheet" href="style2.css">
+    <title>Serwery tymczasowe</title>
+    <script src="scriptW.js" defer></script>
     <script src="script.js" defer></script>
 </head>
 <body>
     <header>
-        <h2>Serwer 3 - tymczasowy</h2>
-        <div id="in_s">
-          <label for="name">Szukaj: </label>
-          <input type="text" name="search" id="search" placeholder="Wpisz nazwę...">
-      </div>
+        <h2>Tymczasowe</h2>
+        
     </header>
     
     <div id="top">
-      <nav>
-        <a href="index2.html">Serwery tymczasowe - specyfikacja</a>
-        <a href="transfers.html">Serwery wirtualne</a>
-        <a href="#">Historia</a>
-    </nav>
+        <nav>
+            <a href="index2.html">Serwery tymczasowe - specyfikacja</a>
+            <a href="transfers.html">Serwery wirtualne</a>
+            <a href="#">Historia</a>
+        </nav>
+        
     </div>
 
     <div id="left">
+      
         <ol>
-            <li><a href="#">Szczegóły - tymczasowe</a>
+            <li><a href="#">Tymczasowe</a>
               <ul>
-                <li><a href="st1.html">Serwer 1</a></li>
+                <li><a href="index2.html">Serwer 1</a></li>
                 <li><a href="st2.html">Serwer 2</a></li>
                 <li><a href="st3.html">Serwer 3</a></li>
+                <li><a href="#">Serwer 4</a></li>
+                <li><a href="#">Serwer 5</a></li>
+                <li><a href="#">Serwer 6</a></li>
               </ul>
             </li>
       
@@ -43,45 +45,57 @@
               </ul>
             </li>
         </ol>
+        <br><br><br>
+        
     </div>
 
-    <div id="bottom">
-        <br><h2>Serwer 3 - tymczasowy:</h2><br>
-        <ul>
-          <li><h3>Parametry techniczne</h3></li>
-          <ul>
-            <li>Przestrzeń dyskowa: <b>300GB</b></li>
-            <li>RAM: <b>jakisram</b></li>
-            <li>Procesor: <b>parametry procesora</b></li>
-            <li>Max pobór mocy: <b>1800W</b></li>
-            <li>Zasilacz: <b>900W</b></li>
-          </ul><br><br>
-          
-          <li><h3>Historia serwera</h3></li>
-          <ul>
-            <li>Data utworzenia: <b>01.01.1990</b></li>
-            <li>Data wprowadzenia do użytku: <b>01.01.1990</b></li>
-            <li>Ostatnia aktualizacja: <b>04.06.1997</b></li>
-            <br>
-            <li><u>Obecność serwerów wirtualnych:</u></li>
-              <ul>
-                <b>
-                  <li>Brak danych</li>
-                </b>
+    <div id="center">
+        <div id="in_s">
+            <label for="name">Szukaj: </label>
+            <input type="text" name="search" id="search" placeholder="Wpisz nazwę...">
+        </div>
+        <br><h3>Serwer 3 tymczasowy - <button type="button">Archiwalne</button></h3><br>
+        
+            <ul>
+                <li>Przestrzeń dyskowa: <b>300GB</b></li>
+                <li>RAM: <b>jakisram</b></li>
+                <li>Procesor: <b>parametry procesora</b></li>
+                <li>Max pobór mocy: <b>1800W</b></li>
+                
               </ul>
               
-          </ul><br><br>
-          
-          <li><h3>Status serwera</h3></li>
-          <ul>
-            <li><b>wyłączony</b></li> <!--wyłączony, w trkcie migracji, awaria-->
-          </ul><br><br>
-  
-          <li><h3>Planowane prace konserwacyjne</h3></li>
-          <ul>
-            <li>Następna aktualizacja: <b>01.01.2010</b></li>
-          </ul>
-        </ul>
+             
+              <ul>
+                <li>Zasilacz: <b>900W</b></li>
+                <li>Data utworzenia: <b>01.01.1990</b></li>
+                <li>Data wprowadzenia do użytku: <b>01.01.1990</b></li>
+                <li>Ostatnia aktualizacja: <b>04.06.1997</b></li>
+              </ul>
+                <br>
+    </div>
+    <div id="bottom">
+
+        <div id="bottom">
+            <div class="progress-wrapper">
+                <div class="progress-label">Poziom zajętości:</div>
+                <div class="progress-container">
+                    <div class="progress-bar" style="width: 70%;">70%</div>
+                </div>
+            </div>
+        </div>
+        
+         <table id="server-table">
+           
+            <tr>
+                <th>Nazwa serwera wirtualnego</th>
+            </tr>
+            <tr data-id="1">
+                <td>Serwer 1 - wirtualny</td>
+            </tr>
+            <tr data-id="2">
+              <td>Serwer 2 - wirtualny</td>
+          </tr>
+         </table>
     </div>
 </body>
 </html>
